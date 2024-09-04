@@ -1,22 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react'
 import { Form, Field } from 'react-final-form';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { submitFormAction } from '../../redux/actions';
-import { AppDispatch, RootState } from '../../redux/store';
+import { AppDispatch } from '../../redux/store';
 import { Box, Button } from '@mui/material';
 
 
 const UserForm = () => {
 
   const dispatch = useDispatch<AppDispatch>()
-  const { status } = useSelector((state: RootState) => state.formReducer);
 
   const onSubmit = (values: any) => {
     dispatch(submitFormAction(values))
   }
-
-  console.log('status', status)
 
   return (
     <Form

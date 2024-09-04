@@ -5,8 +5,7 @@ import { getAllUsersFailure, getAllUsersSuccess, submitFailure, submitSuccess } 
 
 export const submitFormAction = (values: any) => async (dispatch: AppDispatch): Promise<void> => {
   try {
-    const response = await axios.post('http://localhost:3001/users', values)
-    console.log('User added:', response.data)
+    await axios.post('http://localhost:3001/users', values)
     dispatch(submitSuccess()) // Despacha uma ação de sucesso
   } catch (error: any) {
     console.error('Error adding user:', error)
