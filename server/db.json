@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": "969b",
+      "name": "gabriel",
+      "email": "gabriel.leite@fractaltecnologia.com.br"
+    },
+    {
+      "id": "155e",
+      "name": "gabriel",
+      "email": "gabrielcarlossleite@gmail.com"
+    },
+    {
+      "id": "4384",
+      "name": "teste",
+      "email": "teste@gmail.com"
+    },
+    {
+      "id": "6a53",
+      "name": "teste 2",
+      "email": "professorteste102@fractal.com"
+    },
+    {
+      "id": "ad6d",
+      "name": "jackson",
+      "email": "jackson@email.com"
+    },
+    {
+      "id": "1db3",
+      "name": "Rede bertoni",
+      "email": "professorteste101@fractal.com"
+    },
+    {
+      "id": "4060",
+      "name": "Agatha Thaisa",
+      "email": "fractal.tools@fractaltecnologia.com.br"
+    },
+    {
+      "id": "1cbf",
+      "name": "fafafa",
+      "email": "afafaf@gmail.com"
+    }
+  ]
+}
