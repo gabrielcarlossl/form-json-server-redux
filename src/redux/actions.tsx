@@ -2,14 +2,19 @@
 import axios from 'axios';
 import { AppDispatch } from './store';
 import { getAllUsersFailure, getAllUsersSuccess, submitFailure, submitSuccess } from './slices/formSlice';
+import { toast } from 'react-toastify';
 
 export const submitFormAction = (values: any) => async (dispatch: AppDispatch): Promise<void> => {
+  const notifySuccess = () => toast.success("User registered!");
+  const notifyFailure = () => toast.warn("Failed to register user!");
   try {
     await axios.post('http://localhost:3001/users', values)
     dispatch(submitSuccess()) // Despacha uma ação de sucesso
+    notifySuccess()
   } catch (error: any) {
     console.error('Error adding user:', error)
     dispatch(submitFailure(error.message)) // Despacha uma ação de falha
+    notifyFailure()
   }
 }
 
